@@ -1,20 +1,15 @@
-# Используем официальный образ Python
-FROM python:3.10-slim
+# Базовый образ с Python
+FROM python:3.9-slim
 
-# Обновляем список пакетов и устанавливаем curl
-#RUN apt-get update && apt-get install -y curl
+# Установка зависимостей
+RUN pip install -r requirements.txt
 
-# Устанавливаем рабочий каталог приложения в контейнере
-WORKDIR /usr/src/app
+# Копирование файлов приложения
+COPY image_processing.py /app/image_processing.py
+COPY main.py /app/main.py
 
-# Копируем файл requirements.txt в каталог нашего приложения
-COPY requirements.txt ./
+# Рабочая директория
+WORKDIR /app
 
-# Устанавливаем необходимые модули для Python
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Копируем исходный код приложения в контейнер
-COPY . .
-
-# Запускаем приложение
-CMD ["uvicorn", "src.api_app_titanic:app", "--host", "0.0.0.0", "--port", "8091"]
+# Команда для запуска Streamlit
+CMD ["streamlit", "run", "main.py"]
