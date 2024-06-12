@@ -47,7 +47,7 @@ pipeline {
                     if (isUnix()) {
                         sh './venv/scripts/activate.bat'
                     } else {
-                        bat '.\venv\scripts\activate.bat'
+                        bat '.\\venv\\scripts\\activate.bat'
                     }
                 }
             }
