@@ -60,7 +60,7 @@ pipeline {
                     if (isUnix()) {
                         sh 'pip install -r requirements.txt'
                     } else {
-                        bat 'pip install -r requirements.txt'
+                        bat '\\venv\\scripts\\pip.exe install -r requirements.txt'
                     }
                 }
             }
@@ -73,7 +73,7 @@ pipeline {
                     if (isUnix()) {
                         sh 'pytest'
                     } else {
-                        bat 'pytest'
+                        bat '\\venv\\scripts\\pytest.exe'
                     }
                 }
             }
