@@ -78,6 +78,18 @@ pipeline {
                 }
             }
         }
+
+        stage('Build Docker image') {
+            steps {
+                 script {
+                    // Для Линукс
+                    if (isUnix()) {
+                        sh 'docker build -t titanic-img .'
+                    } else {
+                        bat "docker build -t titanic-img -f Dockerfile ."
+                    }
+                 }
+            }
     }
 
     post {
