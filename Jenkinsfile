@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Получаем исходный код из репозитория Git
-                    git branch: 'main', url: 'https://github.com/kcherenkovv/MLOps_project'
+                    git branch: '${BRANCH}', url: 'https://github.com/kcherenkovv/MLOps_project'
                 }
             }
         }
