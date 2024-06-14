@@ -65,6 +65,19 @@ pipeline {
                 }
             }
         }
+
+         stage('Run Unit Tests') {
+            steps {
+                // установка зависимостей
+                script {
+                    if (isUnix()) {
+                        sh 'pytest'
+                    } else {
+                        bat 'pytest'
+                    }
+                }
+            }
+        }
     }
 
     post {
