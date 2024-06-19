@@ -1,6 +1,5 @@
 import io
 import torch
-import streamlit as st
 from PIL import Image
 from transformers import VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer
 
