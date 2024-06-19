@@ -3,6 +3,7 @@ import streamlit as st
 from PIL import Image
 from image_processing import generate_image_description
 
+# создание интерфейса загрузки изображений пользователем в приложении Streamlit
 def load_image():
     uploaded_file = st.file_uploader("Загрузите изображение для описания")
     if uploaded_file is not None:
