@@ -4,8 +4,6 @@ import streamlit as st
 from PIL import Image
 from transformers import VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer
 
-# предварительная настройка и загрузка модели, необходимой для генерации описаний изображений, используя 
-# модель VisionEncoderDecoderModel и ViTImageProcessor из библиотеки Hugging Face Transformers
 def generate_image_description(image_content):
     model = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
     feature_extractor = ViTImageProcessor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
