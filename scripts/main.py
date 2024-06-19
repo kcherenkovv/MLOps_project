@@ -18,7 +18,6 @@ def load_image():
 def main():
     st.title('Описание изображения с помощью Hugging Face модели')
     uploaded_image = load_image()
-    
     if uploaded_image:
         description = generate_image_description(uploaded_image)
         st.subheader(f'Описание изображения: {description}')
