@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Получаем исходный код из репозитория Git
-                    git branch: 'main', url: 'https://github.com/kcherenkovv/MLOps_project'
+                    git branch: 'dataset-tests', url: 'https://github.com/kcherenkovv/MLOps_project'
                 }
             }
         }
@@ -66,7 +66,20 @@ pipeline {
             }
         }
 
-         stage('Run Unit Tests') {
+        stage('Load data') {
+            steps {
+                // установка зависимостей
+                script {
+                    if (isUnix()) {
+                        sh 'dvc pull'
+                    } else {
+                        bat 'dvc pull'
+                    }
+                }
+            }
+        }
+
+        stage('Run Unit Tests') {
             steps {
                 // установка зависимостей
                 script {

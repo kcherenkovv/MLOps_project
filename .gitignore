@@ -2,3 +2,6 @@
 __pycache__/app_test.cpython-310-pytest-7.4.3.pyc
 scripts/__pycache__/__init__.cpython-310.pyc
 scripts/__pycache__/image_processing.cpython-310.pyc
+tests/__pycache__/__init__.cpython-310.pyc
+tests/__pycache__/app_test.cpython-310-pytest-7.4.3.pyc
+tests/__pycache__/data_test.cpython-310-pytest-7.4.3.pyc
