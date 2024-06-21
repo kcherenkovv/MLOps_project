@@ -7,3 +7,4 @@ protobuf==4.25.1
 flake8
 protobuf==4.25.1
 dvc
+dvc-gdrive
