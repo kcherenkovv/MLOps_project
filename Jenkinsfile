@@ -73,7 +73,7 @@ pipeline {
                     if (isUnix()) {
                         sh 'dvc pull'
                     } else {
-                        bat 'dvc pull'
+                        bat 'dvc.exe pull'
                     }
                 }
             }
