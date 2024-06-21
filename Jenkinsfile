@@ -15,12 +15,6 @@ pipeline {
                 // Очистка рабочего пространства
                 cleanWs()
                 checkout scm
-                 script {
-                    if (isUnix()) {
-                    } else {
-                        chcp 1251
-                    }
-                }
             }
         }
 
