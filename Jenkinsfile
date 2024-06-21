@@ -47,7 +47,7 @@ pipeline {
                     if (isUnix()) {
                         sh './venv/scripts/activate.bat'
                     } else {
-                        bat '.\venv\scripts\activate.bat'
+                        bat '.\\venv\\scripts\\activate.bat'
                     }
                 }
             }
@@ -60,9 +60,35 @@ pipeline {
                     if (isUnix()) {
                         sh 'pip install -r requirements.txt'
                     } else {
-                        bat 'pip install -r requirements.txt'
+                        bat '.\\venv\\scripts\\pip.exe install -r requirements.txt'
                     }
                 }
+            }
+        }
+
+         stage('Run Unit Tests') {
+            steps {
+                // установка зависимостей
+                script {
+                    if (isUnix()) {
+                        sh 'pytest'
+                    } else {
+                        bat '.\\venv\\scripts\\pytest.exe'
+                    }
+                }
+            }
+        }
+
+        stage('Build Docker image') {
+            steps {
+                 script {
+                    // Для Линукс
+                    if (isUnix()) {
+                        sh 'docker build -t img-desc-img .'
+                    } else {
+                        bat "docker build -t img-desc-img -f Dockerfile ."
+                    }
+                 }
             }
         }
     }
