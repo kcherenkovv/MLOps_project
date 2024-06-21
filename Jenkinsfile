@@ -73,7 +73,7 @@ pipeline {
                     if (isUnix()) {
                         sh 'dvc pull'
                     } else {
-                        bat 'dvc.exe pull'
+                        bat '.\\venv\\scripts\\dvc.exe pull'
                     }
                 }
             }
