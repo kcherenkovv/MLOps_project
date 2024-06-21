@@ -84,9 +84,9 @@ pipeline {
                  script {
                     // Для Линукс
                     if (isUnix()) {
-                        sh 'docker build -t titanic-img .'
+                        sh 'docker build -t img-desc-img .'
                     } else {
-                        bat "docker build -t titanic-img -f Dockerfile ."
+                        bat "docker build -t img-desc-img -f Dockerfile ."
                     }
                  }
             }
