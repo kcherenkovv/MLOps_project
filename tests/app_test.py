@@ -21,7 +21,7 @@ def test_generate_image_description_image_string_bad_path():
     except FileNotFoundError:
         result = True
 
-    assert result == True
+    assert result is True
 
 
 def test_generate_image_description_image_bytes():
@@ -52,7 +52,7 @@ def test_generate_image_description_image_unknown_type():
     except ValueError:
         result = True
 
-    assert result == True
+    assert result is True
 
 
 if __name__ == '__main__':
