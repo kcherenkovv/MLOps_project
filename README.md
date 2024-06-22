@@ -3,7 +3,9 @@
 ## Версионирования датасета на удалённом репозитории в googleDrive:
 ![screen1](https://github.com/kcherenkovv/MLOps_project/blob/main/scrins/dvc_example.png)
 
+
 **Проект выполнен согласно поставленному заданию и включает следующие основные компоненты и функциональности:**
+
 
 
 **Оркестрация с помощью CI/CD (Jenkins)**
