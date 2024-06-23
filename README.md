@@ -14,9 +14,6 @@
 Михиал Симаков
 
 
-**Датасет** 
-
-https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
 
 
 **Версионирования датасета на удалённом репозитории в googleDrive:**
@@ -24,8 +21,17 @@ https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
 
 
 
-**Проект выполнен согласно поставленному заданию и включает следующие основные компоненты и функциональности:**
 
+
+**Датасет** 
+
+https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
+
+
+
+
+
+**Проект выполнен согласно поставленному заданию и включает следующие основные компоненты и функциональности:**
 
 
 **Оркестрация с помощью CI/CD (Jenkins)**
