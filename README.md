@@ -22,6 +22,7 @@
 https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
 
 
+
 **Проект выполнен согласно поставленному заданию и включает следующие основные компоненты и функциональности:**
 
 
