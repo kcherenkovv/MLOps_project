@@ -14,15 +14,13 @@
 Михиал Симаков
 
 
-## Версионирования датасета на удалённом репозитории в googleDrive:
-![screen1](https://github.com/kcherenkovv/MLOps_project/blob/main/scrins/dvc_example.png)
-
 **Датасет** 
 
 https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
 
 
-
+**Версионирования датасета на удалённом репозитории в googleDrive:**
+![screen1](https://github.com/kcherenkovv/MLOps_project/blob/main/scrins/dvc_example.png)
 
 
 
