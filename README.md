@@ -1,7 +1,21 @@
 ![screen1](https://github.com/kcherenkovv/MLOps_project/blob/main/scrins/example_of_work.png)
 
+
+**Команда:**
+
+Кирилл Реченков 
+Николай Шешин 
+Серафим Завгородний
+Екатерина Таратута
+Михиал Симаков
+
+
 ## Версионирования датасета на удалённом репозитории в googleDrive:
 ![screen1](https://github.com/kcherenkovv/MLOps_project/blob/main/scrins/dvc_example.png)
+
+**Датасет** 
+
+https://drive.google.com/drive/folders/1AFZ7-dMZLfXwDyBfSURczp8jpYz2qf-p
 
 
 **Проект выполнен согласно поставленному заданию и включает следующие основные компоненты и функциональности:**
